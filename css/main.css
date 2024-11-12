@@ -1,0 +1,18 @@
+/** start the global values **/
+:root
+{
+  --main-col:#0B9586;
+  --sec-col:#FFBB1C
+}
+  *{
+      -webkit-box-sizing: border-box; 
+      -moz-box-sizing: border-box; /** for defining glopal box sizing on firefox**/
+      box-sizing: border-box;
+  }
+  body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  
