@@ -1,18 +1,67 @@
 /** start the global values **/
-:root
-{
-  --main-col:#0B9586;
-  --sec-col:#FFBB1C
-}
   *{
       -webkit-box-sizing: border-box; 
       -moz-box-sizing: border-box; /** for defining glopal box sizing on firefox**/
       box-sizing: border-box;
   }
   body{
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif !important;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
   }
-  
+  /** end the global values **/
+  /* start the Landing */
+  .title{
+    font-size: 6em;
+  }
+  @media (max-width: 420px) {
+    .title{
+      font-size: 5em;
+    }
+  }
+  @media (min-width: 320px) {
+    .par{
+      width: 75%;
+          }
+  }
+  .link{
+    transition: 0.3s !important;
+  }
+  .link:hover{
+    font-weight: 800 !important;
+  }
+  .photo::after{
+    content: "";
+    position: absolute ;
+    width: 80px ;
+    height: 80px ;
+    border: solid #000 3px;
+    left: -50px;
+    top: -50px;
+    z-index: -1;
+  }
+  .down{
+    position: absolute;
+    background-color: black;
+    bottom: 0;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+    border: none !important;
+  }
+  @media (max-width: 787px) {
+    .right{
+      position: relative;
+      top: 130px;
+  }
+  .down{
+    width: 80px;
+    height: 80px;
+  }
+}
+  @media (max-width: 620px) {
+    .right{
+      display: none;
+  }
+}
