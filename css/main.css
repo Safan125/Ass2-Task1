@@ -82,3 +82,21 @@
     display: none;
   }
 }
+/* end the Landing */
+/* start the Services */
+.customcard{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  column-gap: 100px;
+  row-gap: 40px;
+}
+@media(max-width: 620px){
+  .customtitle{
+font-size: 4em;
+  }
+}
+@media(max-width: 420px){
+  .customtitle{
+font-size: 2em;
+  }
+}
