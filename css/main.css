@@ -100,3 +100,153 @@ font-size: 4em;
 font-size: 2em;
   }
 }
+
+/* end the Services */
+/* start the Sections */
+.lineclass {
+  box-shadow: #6c6c6c66 0px 1px 0px;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.icon-circle:not(:last-child):before {
+  content: '';
+  position: absolute;
+  height: 150%;
+  left: 50%;
+  top: 125%;
+  bottom: 0;
+  width: 1px;
+  background-color: grey;
+  transform: translateX(-50%);
+}
+
+.icon-img {
+  width: 30px;
+  height: 30px;
+}
+
+/*Testimonals*/
+.testimonals{
+  position: relative;
+  padding-bottom: 200px;
+}
+.left-part{
+  width: fit-content;
+}
+.left-part img{
+  max-width: 420px;
+}
+.right-part{
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  display: flex;
+}
+.right-part img{
+  position: relative;
+  max-width: 40%;
+  border-width: 20px;
+  border-color: white;
+  border-style: solid;
+}
+.head{
+  width: 30%;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  font-size: 2.5em !important;
+  font-weight: 800 !important;
+}
+@media(max-width: 960px){
+  .left-part img{
+    max-width: 320px;
+  }
+}
+@media(max-width: 730px){
+  .testimonals{
+    padding-bottom: 100%;
+  }
+  .left-part img{
+    display: none;
+  }
+  .right-part{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,10%);
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+  }
+  .right-part img{
+    position: relative;
+    max-width: 100%;
+    border:none;
+  }
+  .head{
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    font-size: 2em !important;
+    font-weight: 800 !important;
+  }
+}
+@media(max-width: 620px){
+  .head{
+    font-size: 1.5em !important;
+  }
+  .right-part{
+    transform: translate(-50%,25%);
+
+  }
+}
+
+/* Custom CSS for centering the subscription section */
+.Sub {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.customMail {
+  width: 75%;
+  top: 50%;
+  transform: translateY(-20%);
+  z-index: 1; /* Ensure it appears above other elements */
+}
+
+footer .logo {
+  max-width: 100%;
+  height: auto;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+footer .d-flex a {
+  font-size: 1.5rem;
+}
+
+footer h5 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
